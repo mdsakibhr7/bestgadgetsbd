@@ -1,0 +1,6 @@
+0000.029 (R) [notice] Looking for db archive: file name: backup_2023-10-08-1610_Best_gadgets_Bd_9c508c000bf5-db.gz
+0000.030 (R) [notice] Archive is expected to be size: 289.5 KB: OK
+0000.034 (R) [notice] Looking for plugins archive: file name: backup_2023-10-08-1610_Best_gadgets_Bd_9c508c000bf5-plugins.zip
+0000.035 (R) [notice] Archive is expected to be size: 8189.4 KB: OK
+0000.038 (R) [warning] Error: Existing unremoved folders from a previous restore exist (please use the "Delete old folders" button to delete them before trying again): E:\pluginbazar\plugin\bestgadgetsbd/wp-content/updraft/plugins-old
+0000.040 (R) [notice] Restore failed...

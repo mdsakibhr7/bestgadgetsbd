@@ -1,0 +1,264 @@
+0000.010 () Opened log file at time: Mon, 18 Sep 2023 05:20:07 +0000 on http://bestgadgetsbd.local
+0000.011 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.10 WP: 6.3.1 PHP: 8.1.10 (apache2handler, Windows NT DESKTOP-77B40AA 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.0.30 (max packet size=536870912) WPLANG: en_US Server: Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 37.7M | 40M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.011 () Free space on disk containing Updraft's temporary directory: 88264.2 MB
+0000.587 () Restore setup, now closing connection and starting restore over AJAX.
+0000.005 () Opened log file at time: Mon, 18 Sep 2023 05:20:08 +0000 on http://bestgadgetsbd.local
+0000.006 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.10 WP: 6.3.1 PHP: 8.1.10 (apache2handler, Windows NT DESKTOP-77B40AA 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.0.30 (max packet size=536870912) WPLANG: en_US Server: Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 35.9M | 40M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 () Free space on disk containing Updraft's temporary directory: 88264.1 MB
+0000.031 () Ensuring WP_Filesystem is setup for a restore
+0000.033 () WP_Filesystem is setup and ready for a restore
+0000.040 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["wpfr_options","wpfr_users","wpfr_usermeta","wpfr_commentmeta","wpfr_comments","wpfr_links","wpfr_postmeta","wpfr_posts","wpfr_term_relationships","wpfr_term_taxonomy","wpfr_termmeta","wpfr_terms","wpfr_actionscheduler_actions","wpfr_actionscheduler_claims","wpfr_actionscheduler_groups","wpfr_actionscheduler_logs","wpfr_e_events","wpfr_easywpsmtp_debug_events","wpfr_easywpsmtp_tasks_meta","wpfr_instawp_event_sites","wpfr_instawp_events","wpfr_instawp_staging_sites","wpfr_instawp_sync_history","wpfr_post_smtp_logmeta","wpfr_post_smtp_logs","wpfr_woocommerce_order_listener","wpfr_wpforms_payment_meta","wpfr_wpforms_payments","wpfr_wpforms_tasks_meta","wpfr_wpmailsmtp_debug_events","wpfr_wpmailsmtp_tasks_meta"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.043 () PHP event: code E_WARNING: mkdir(): File exists (line 558, D:\pluginbazar\bestgadgetsbd\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.055 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.058 () Entity: db
+0000.059 () restore_backup(backup_file=backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-db.gz, type=db, info=a:0:{}, last_one=)
+0000.059 () Unpacking backup... (backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-db.gz, 0.1 Mb)
+0000.059 () PHP event: code E_WARNING: mkdir(): File exists (line 558, D:\pluginbazar\bestgadgetsbd\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.062 () Database successfully unpacked
+0000.064 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.069 () Using direct MySQL access; value of use_mysqli is: 1
+0000.071 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.139 () Max packet size: 512 MB
+0000.139 () Entering maintenance mode
+0000.139 () Enabling Maintenance mode&#8230;
+0000.173 () Backup of: https://bestgadgetsbd.com
+0000.194 () Content URL: https://bestgadgetsbd.com/wp-content
+0000.195 () Uploads URL: https://bestgadgetsbd.com/wp-content/uploads
+0000.195 () Old table prefix: wpfr_
+0000.195 () Old ABSPATH: /home/bestgadg/public_html/
+0000.195 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.199 () Site information: multisite=0
+0000.199 () Site information: sql_mode=
+0000.202 () New table prefix: zx_
+0000.208 () Processing table (InnoDB): wpfr_options - will restore as: zx_options
+0000.319 () Atomic restore: dropping original table (wp_options)
+0000.337 () Atomic restore: renaming new table (zx_options) to final table name (wp_options)
+0000.349 () Restoring prior UD configuration (table: wp_options; keys: 102)
+0000.550 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.550 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.550 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.551 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.551 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.551 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.593 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.615 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.620 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0000.698 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\options.php)
+0000.703 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, D:\pluginbazar\bestgadgetsbd\wp-content\plugins\updraftplus\options.php)
+0000.901 () Table prefix has changed: changing options table field(s) accordingly (options)
+0000.903 () Options table fields changed OK
+0000.910 () Search and replacing table: wp_options: rows: 272
+0000.962 () Processing table (InnoDB): wpfr_users - will restore as: zx_users
+0001.038 () Atomic restore: dropping original table (wp_users)
+0001.062 () Atomic restore: renaming new table (zx_users) to final table name (wp_users)
+0001.088 () Search and replacing table: wp_users: rows: 1
+0001.091 () Processing table (InnoDB): wpfr_usermeta - will restore as: zx_usermeta
+0001.146 () Atomic restore: dropping original table (wp_usermeta)
+0001.164 () Atomic restore: renaming new table (zx_usermeta) to final table name (wp_usermeta)
+0001.179 () Table prefix has changed: changing usermeta table field(s) accordingly
+0001.185 () Usermeta table fields changed OK
+0001.189 () Search and replacing table: wp_usermeta: rows: 28
+0001.192 () Processing table (InnoDB): wpfr_commentmeta - will restore as: zx_commentmeta
+0001.239 () Atomic restore: dropping original table (wp_commentmeta)
+0001.257 () Atomic restore: renaming new table (zx_commentmeta) to final table name (wp_commentmeta)
+0001.278 () Search and replacing table: wp_commentmeta: rows: 0
+0001.278 () Processing table (InnoDB): wpfr_comments - will restore as: zx_comments
+0001.335 () Atomic restore: dropping original table (wp_comments)
+0001.359 () Atomic restore: renaming new table (zx_comments) to final table name (wp_comments)
+0001.380 () Search and replacing table: wp_comments: rows: 1
+0001.383 () Processing table (InnoDB): wpfr_links - will restore as: zx_links
+0001.425 () Atomic restore: dropping original table (wp_links)
+0001.436 () Atomic restore: renaming new table (zx_links) to final table name (wp_links)
+0001.458 () Search and replacing table: wp_links: rows: 0
+0001.458 () Processing table (InnoDB): wpfr_postmeta - will restore as: zx_postmeta
+0001.533 () Atomic restore: dropping original table (wp_postmeta)
+0001.551 () Atomic restore: renaming new table (zx_postmeta) to final table name (wp_postmeta)
+0001.571 () Search and replacing table: wp_postmeta: rows: 0
+0001.571 () Processing table (InnoDB): wpfr_posts - will restore as: zx_posts
+0001.625 () Atomic restore: dropping original table (wp_posts)
+0001.647 () Atomic restore: renaming new table (zx_posts) to final table name (wp_posts)
+0001.670 () Skipping search/replace on GUID column in posts table
+0001.673 () Search and replacing table: wp_posts: rows: 48
+0001.681 () Processing table (InnoDB): wpfr_term_relationships - will restore as: zx_term_relationships
+0001.759 () Atomic restore: dropping original table (wp_term_relationships)
+0001.777 () Atomic restore: renaming new table (zx_term_relationships) to final table name (wp_term_relationships)
+0001.793 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0001.793 () Processing table (InnoDB): wpfr_term_taxonomy - will restore as: zx_term_taxonomy
+0001.838 () Atomic restore: dropping original table (wp_term_taxonomy)
+0001.854 () Atomic restore: renaming new table (zx_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.887 () Search and replacing table: wp_term_taxonomy: rows: 2
+0001.888 () Processing table (InnoDB): wpfr_termmeta - will restore as: zx_termmeta
+0001.935 () Atomic restore: dropping original table (wp_termmeta)
+0001.953 () Atomic restore: renaming new table (zx_termmeta) to final table name (wp_termmeta)
+0001.973 () Search and replacing table: wp_termmeta: rows: 0
+0001.973 () Processing table (InnoDB): wpfr_terms - will restore as: zx_terms
+0002.022 () Atomic restore: dropping original table (wp_terms)
+0002.038 () Atomic restore: renaming new table (zx_terms) to final table name (wp_terms)
+0002.058 () Search and replacing table: wp_terms: rows: 2
+0002.059 () Processing table (InnoDB): wpfr_actionscheduler_actions - will restore as: zx_actionscheduler_actions
+0002.146 () Atomic restore: dropping original table (wp_actionscheduler_actions)
+0002.149 () Atomic restore: renaming new table (zx_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0002.174 () Search and replacing table: wp_actionscheduler_actions: rows: 198
+0002.177 () Incomplete object detected in database: ActionScheduler_IntervalSchedule; Search and replace will be skipped for these entries
+0002.188 () Incomplete object detected in database: ActionScheduler_SimpleSchedule; Search and replace will be skipped for these entries
+0002.188 () Incomplete object detected in database: ActionScheduler_NullSchedule; Search and replace will be skipped for these entries
+0002.192 () Processing table (InnoDB): wpfr_actionscheduler_claims - will restore as: zx_actionscheduler_claims
+0002.236 () Atomic restore: dropping original table (wp_actionscheduler_claims)
+0002.239 () Atomic restore: renaming new table (zx_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0002.255 () Search and replacing table: wp_actionscheduler_claims: rows: 0
+0002.256 () Processing table (InnoDB): wpfr_actionscheduler_groups - will restore as: zx_actionscheduler_groups
+0002.303 () Atomic restore: dropping original table (wp_actionscheduler_groups)
+0002.306 () Atomic restore: renaming new table (zx_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0002.323 () Search and replacing table: wp_actionscheduler_groups: rows: 5
+0002.324 () Processing table (InnoDB): wpfr_actionscheduler_logs - will restore as: zx_actionscheduler_logs
+0002.401 () Database queries processed: 50 in 2.32 seconds
+0002.401 () Atomic restore: dropping original table (wp_actionscheduler_logs)
+0002.404 () Atomic restore: renaming new table (zx_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0002.423 () Search and replacing table: wp_actionscheduler_logs: rows: 586
+0002.442 () Processing table (InnoDB): wpfr_e_events - will restore as: zx_e_events
+0002.478 () Atomic restore: dropping original table (wp_e_events)
+0002.480 () Atomic restore: renaming new table (zx_e_events) to final table name (wp_e_events)
+0002.498 () Search and replacing table: wp_e_events: rows: 1
+0002.500 () Processing table (InnoDB): wpfr_easywpsmtp_debug_events - will restore as: zx_easywpsmtp_debug_events
+0002.530 () Atomic restore: dropping original table (wp_easywpsmtp_debug_events)
+0002.532 () Atomic restore: renaming new table (zx_easywpsmtp_debug_events) to final table name (wp_easywpsmtp_debug_events)
+0002.546 () Search and replacing table: wp_easywpsmtp_debug_events: rows: 0
+0002.546 () Processing table (InnoDB): wpfr_easywpsmtp_tasks_meta - will restore as: zx_easywpsmtp_tasks_meta
+0002.570 () Atomic restore: dropping original table (wp_easywpsmtp_tasks_meta)
+0002.573 () Atomic restore: renaming new table (zx_easywpsmtp_tasks_meta) to final table name (wp_easywpsmtp_tasks_meta)
+0002.589 () Search and replacing table: wp_easywpsmtp_tasks_meta: rows: 0
+0002.589 () Processing table (InnoDB): wpfr_instawp_event_sites - will restore as: zx_instawp_event_sites
+0002.612 () Atomic restore: dropping original table (wp_instawp_event_sites)
+0002.615 () Atomic restore: renaming new table (zx_instawp_event_sites) to final table name (wp_instawp_event_sites)
+0002.630 () Search and replacing table: wp_instawp_event_sites: rows: 0
+0002.630 () Processing table (InnoDB): wpfr_instawp_events - will restore as: zx_instawp_events
+0002.658 () Atomic restore: dropping original table (wp_instawp_events)
+0002.660 () Atomic restore: renaming new table (zx_instawp_events) to final table name (wp_instawp_events)
+0002.676 () Search and replacing table: wp_instawp_events: rows: 0
+0002.676 () Processing table (InnoDB): wpfr_instawp_staging_sites - will restore as: zx_instawp_staging_sites
+0002.702 () Atomic restore: dropping original table (wp_instawp_staging_sites)
+0002.705 () Atomic restore: renaming new table (zx_instawp_staging_sites) to final table name (wp_instawp_staging_sites)
+0002.726 () Search and replacing table: wp_instawp_staging_sites: rows: 0
+0002.726 () Processing table (InnoDB): wpfr_instawp_sync_history - will restore as: zx_instawp_sync_history
+0002.747 () Atomic restore: dropping original table (wp_instawp_sync_history)
+0002.750 () Atomic restore: renaming new table (zx_instawp_sync_history) to final table name (wp_instawp_sync_history)
+0002.763 () Search and replacing table: wp_instawp_sync_history: rows: 0
+0002.763 () Processing table (InnoDB): wpfr_post_smtp_logmeta - will restore as: zx_post_smtp_logmeta
+0002.786 () Atomic restore: dropping original table (wp_post_smtp_logmeta)
+0002.789 () Atomic restore: renaming new table (zx_post_smtp_logmeta) to final table name (wp_post_smtp_logmeta)
+0002.801 () Search and replacing table: wp_post_smtp_logmeta: rows: 0
+0002.802 () Processing table (InnoDB): wpfr_post_smtp_logs - will restore as: zx_post_smtp_logs
+0002.823 () Atomic restore: dropping original table (wp_post_smtp_logs)
+0002.825 () Atomic restore: renaming new table (zx_post_smtp_logs) to final table name (wp_post_smtp_logs)
+0002.839 () Search and replacing table: wp_post_smtp_logs: rows: 0
+0002.839 () Processing table (InnoDB): wpfr_woocommerce_order_listener - will restore as: zx_woocommerce_order_listener
+0002.880 () Atomic restore: dropping original table (wp_woocommerce_order_listener)
+0002.883 () Atomic restore: renaming new table (zx_woocommerce_order_listener) to final table name (wp_woocommerce_order_listener)
+0002.905 () Search and replacing table: wp_woocommerce_order_listener: rows: 0
+0002.905 () Processing table (InnoDB): wpfr_wpforms_payment_meta - will restore as: zx_wpforms_payment_meta
+0002.951 () Atomic restore: dropping original table (wp_wpforms_payment_meta)
+0002.954 () Atomic restore: renaming new table (zx_wpforms_payment_meta) to final table name (wp_wpforms_payment_meta)
+0002.970 () Search and replacing table: wp_wpforms_payment_meta: rows: 0
+0002.970 () Processing table (InnoDB): wpfr_wpforms_payments - will restore as: zx_wpforms_payments
+0003.031 () Atomic restore: dropping original table (wp_wpforms_payments)
+0003.033 () Atomic restore: renaming new table (zx_wpforms_payments) to final table name (wp_wpforms_payments)
+0003.058 () Search and replacing table: wp_wpforms_payments: rows: 0
+0003.058 () Processing table (InnoDB): wpfr_wpforms_tasks_meta - will restore as: zx_wpforms_tasks_meta
+0003.091 () Atomic restore: dropping original table (wp_wpforms_tasks_meta)
+0003.094 () Atomic restore: renaming new table (zx_wpforms_tasks_meta) to final table name (wp_wpforms_tasks_meta)
+0003.106 () Search and replacing table: wp_wpforms_tasks_meta: rows: 1
+0003.107 () Processing table (InnoDB): wpfr_wpmailsmtp_debug_events - will restore as: zx_wpmailsmtp_debug_events
+0003.131 () Atomic restore: dropping original table (wp_wpmailsmtp_debug_events)
+0003.135 () Atomic restore: renaming new table (zx_wpmailsmtp_debug_events) to final table name (wp_wpmailsmtp_debug_events)
+0003.149 () Search and replacing table: wp_wpmailsmtp_debug_events: rows: 0
+0003.149 () Processing table (InnoDB): wpfr_wpmailsmtp_tasks_meta - will restore as: zx_wpmailsmtp_tasks_meta
+0003.170 () Unlocking database and leaving maintenance mode
+0003.170 () Disabling Maintenance mode&#8230;
+0003.171 () Atomic restore: dropping original table (wp_wpmailsmtp_tasks_meta)
+0003.174 () Atomic restore: renaming new table (zx_wpmailsmtp_tasks_meta) to final table name (wp_wpmailsmtp_tasks_meta)
+0003.189 () Search and replacing table: wp_wpmailsmtp_tasks_meta: rows: 0
+0003.189 () Finished: lines processed: 84 in 3.11 seconds
+0003.189 () Cleaning up rubbish...
+0003.190 () Begin search and replace (updraftplus_restored_db)
+0003.190 () [Database-replace-site-url] Database: search and replace site URL
+0003.192 () Database search and replace: replace https://bestgadgetsbd.com in backup dump with http://bestgadgetsbd.local
+0003.192 () Database search and replace: replace http://www.bestgadgetsbd.com in backup dump with http://bestgadgetsbd.local
+0003.192 () Database search and replace: replace http://bestgadgetsbd.com in backup dump with http://bestgadgetsbd.local
+0003.192 () Database search and replace: replace https://www.bestgadgetsbd.com in backup dump with http://bestgadgetsbd.local
+0003.192 () Database search and replace: replace /home/bestgadg/public_html in backup dump with D:\pluginbazar\bestgadgetsbd
+0003.194 () Search and replacing table: wp_actionscheduler_actions: already done
+0003.194 () Search and replacing table: wp_actionscheduler_claims: already done
+0003.194 () Search and replacing table: wp_actionscheduler_groups: already done
+0003.194 () Search and replacing table: wp_actionscheduler_logs: already done
+0003.194 () Search and replacing table: wp_commentmeta: already done
+0003.194 () Search and replacing table: wp_comments: already done
+0003.195 () Search and replacing table: wp_e_events: already done
+0003.195 () Search and replacing table: wp_easywpsmtp_debug_events: already done
+0003.195 () Search and replacing table: wp_easywpsmtp_tasks_meta: already done
+0003.195 () Search and replacing table: wp_instawp_event_sites: already done
+0003.195 () Search and replacing table: wp_instawp_events: already done
+0003.195 () Search and replacing table: wp_instawp_staging_sites: already done
+0003.195 () Search and replacing table: wp_instawp_sync_history: already done
+0003.195 () Search and replacing table: wp_links: already done
+0003.195 () Search and replacing table: wp_options: already done
+0003.195 () Search and replacing table: wp_post_smtp_logmeta: already done
+0003.196 () Search and replacing table: wp_post_smtp_logs: already done
+0003.196 () Search and replacing table: wp_postmeta: already done
+0003.196 () Search and replacing table: wp_posts: already done
+0003.196 () Search and replacing table: wp_term_relationships: already done
+0003.196 () Search and replacing table: wp_term_taxonomy: already done
+0003.196 () Search and replacing table: wp_termmeta: already done
+0003.196 () Search and replacing table: wp_terms: already done
+0003.196 () Search and replacing table: wp_usermeta: already done
+0003.196 () Search and replacing table: wp_users: already done
+0003.196 () Search and replacing table: wp_woocommerce_order_listener: already done
+0003.197 () Search and replacing table: wp_wpforms_payment_meta: already done
+0003.197 () Search and replacing table: wp_wpforms_payments: already done
+0003.197 () Search and replacing table: wp_wpforms_tasks_meta: already done
+0003.197 () Search and replacing table: wp_wpmailsmtp_debug_events: already done
+0003.197 () Search and replacing table: wp_wpmailsmtp_tasks_meta: already done
+0003.210 () Entity: plugins
+0003.210 () restore_backup(backup_file=backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:47:"D:\pluginbazar\bestgadgetsbd/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0003.210 () Unpacking backup... (backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-plugins.zip, 8 MB)
+0003.226 () Unzipping backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-plugins.zip to D:/pluginbazar/bestgadgetsbd/wp-content/upgrade/f57c7295/ using UpdraftPlus_ZipArchive, starting index 0
+0004.676 () Unzip progress: 1002 out of 1726 files (21 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Common/Event.php)
+0008.544 () Unzip progress: 1726 out of 1726 files (26.6 MB, plugins/updraftplus/updraftplus.php)
+0008.547 () Moving old data: filesystem method / updraft_dir is potentially possible
+0008.548 () Moving old data: can potentially use wp_filesystem method / -old
+0008.548 () Moving old data out of the way...
+0008.810 () Top-level entities being moved: classic-editor, index.php, updraftplus
+0008.815 () Moving unpacked backup into place...
+0009.148 () Top-level entities being moved: better-search-replace, bgbd-tool, classic-editor, index.php, updraftplus
+0009.157 () Cleaning up rubbish...
+0009.166 () Entity: themes
+0009.166 () restore_backup(backup_file=backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-themes.zip, type=themes, info=a:3:{s:4:"path";s:46:"D:\pluginbazar\bestgadgetsbd/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0009.167 () Unpacking backup... (backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-themes.zip, 10 MB)
+0009.167 () Unzipping backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-themes.zip to D:/pluginbazar/bestgadgetsbd/wp-content/upgrade/c6053bee/ using UpdraftPlus_ZipArchive, starting index 0
+0010.712 () Unzip progress: 512 out of 512 files (19.1 MB, themes/index.php)
+0010.715 () Moving old data: filesystem method / updraft_dir is potentially possible
+0010.716 () Moving old data: can potentially use wp_filesystem method / -old
+0010.716 () Moving old data out of the way...
+0010.872 () Top-level entities being moved: index.php, twentytwentyone, twentytwentythree, twentytwentytwo
+0010.876 () Moving unpacked backup into place...
+0010.966 () Top-level entities being moved: index.php, newspaper-x, newspaper-x-child
+0010.969 () Cleaning up rubbish...
+0010.981 () Entity: uploads
+0010.981 () restore_backup(backup_file=backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:47:"D:\pluginbazar\bestgadgetsbd/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0010.981 () Unpacking backup... (backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-uploads.zip, 0.1 MB)
+0010.982 () Unzipping backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-uploads.zip to D:/pluginbazar/bestgadgetsbd/wp-content/upgrade/ddbb59e2/ using UpdraftPlus_ZipArchive, starting index 0
+0010.990 () Unzip progress: 7 out of 7 files (133 KB, uploads/2023/08/Rectangle-90.jpg)
+0010.993 () Moving old data: filesystem method / updraft_dir is potentially possible
+0010.993 () Moving old data: can potentially use wp_filesystem method / -old
+0010.993 () Moving old data out of the way...
+0010.995 () Moving unpacked backup into place...
+0010.998 () Cleaning up rubbish...
+0011.005 () Entity: others
+0011.005 () restore_backup(backup_file=backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-others.zip, type=others, info=a:2:{s:4:"path";s:39:"D:\pluginbazar\bestgadgetsbd/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0011.005 () Unpacking backup... (backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-others.zip, 0 MB)
+0011.006 () Unzipping backup_2023-09-18-0517_Best_gadgets_Bd_7f63023d73c3-others.zip to D:/pluginbazar/bestgadgetsbd/wp-content/upgrade/088eff94/ using UpdraftPlus_ZipArchive, starting index 0
+0011.011 () Unzip progress: 2 out of 2 files (28 B, index.php)
+0011.014 () Cleaning up rubbish...
+0011.015 () PHP event: code E_WARNING: rmdir(D:/pluginbazar/bestgadgetsbd/wp-content/upgrade/088eff94): Directory not empty (line 386, D:\pluginbazar\bestgadgetsbd\wp-admin\includes\class-wp-filesystem-direct.php)
+0011.015 () Error: Failed to delete working directory after restoring. (D:/pluginbazar/bestgadgetsbd/wp-content/upgrade/088eff94)
+0011.773 () Restore successful!
+0011.773 () Restore successful

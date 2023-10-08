@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "sass": "^1.66.1"
+    },
+    "scripts": {
+        "start": "sass --watch scss/main.scss css/theme-main.min.css --style compressed"
+    }
+}

@@ -1,0 +1,406 @@
+/**
+ * Admin Styles
+ */
+:root {
+    --bestgadgetsbd-primary-color: #774ea9;
+    --bestgadgetsbd-primary-color-dim: #e3dbed;
+    --wpdk_settings-primary-color: var(--bestgadgetsbd-primary-color);
+    --wpdk_settings-primary-color-dim: var(--bestgadgetsbd-primary-color-dim);
+}
+
+li.toplevel_page_bestgadgetsbd div.wp-menu-image:before {
+    animation-name: bestgadgetsbd_bell_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bestgadgetsbd {
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.bestgadgetsbd .bestgadgetsbd-section {
+    background: #fff;
+    box-shadow: 0 5px 30px 5px rgb(0 0 0 / 7%);
+}
+
+.bestgadgetsbd-section.bestgadgetsbd-checker {
+    width: 380px;
+    margin-right: 30px;
+}
+
+.bestgadgetsbd .bestgadgetsbd-loading {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bestgadgetsbd .bestgadgetsbd-loading > span {
+    font-size: 100px;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.bestgadgetsbd.bestgadgetsbd-active .bestgadgetsbd-loading > span {
+    animation: searching 3s infinite
+}
+
+.bestgadgetsbd .bestgadgetsbd-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bestgadgetsbd .bestgadgetsbd-action {
+    background: #4caf503b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inherit;
+}
+
+.bestgadgetsbd .bestgadgetsbd-action.bestgadgetsbd-controller:not(.active), .bestgadgetsbd .bestgadgetsbd-action.bestgadgetsbd-volume:not(.active) {
+    background: #e91e633b;
+}
+
+.bestgadgetsbd .bestgadgetsbd-actions .bestgadgetsbd-action > span {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.bestgadgetsbd .bestgadgetsbd-actions .bestgadgetsbd-action > span.dashicons-controls-play {
+    left: calc(50% + 5px);
+}
+
+.bestgadgetsbd .bestgadgetsbd-actions .bestgadgetsbd-action > span.dashicons-controls-volumeoff {
+    left: calc(50% + 7px);
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: calc(100% - 410px);
+    min-height: 600px;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders .bestgadgetsbd-row {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders .bestgadgetsbd-row .bestgadgetsbd-row-item {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 600;
+    width: 20%;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders thead tr th {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders tr td > a, .bestgadgetsbd .bestgadgetsbd-orders tr td > a:active, .bestgadgetsbd .bestgadgetsbd-orders tr td > a:focus {
+    text-decoration: none;
+    color: #3c3c3c;
+    outline: none;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders .order-action {
+    display: block;
+    width: 38px;
+    height: 38px;
+    opacity: 1;
+    background: #717171;
+    color: #fff;
+    border-radius: 50%;
+    visibility: visible;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders span.order-status {
+    text-transform: capitalize;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: #9e9e9e3b;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders span.order-status.pending, .bestgadgetsbd .bestgadgetsbd-orders span.order-status.on-hold {
+    border-color: #ffc107;
+    background: #ffc1072b;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders span.order-status.processing {
+    border-color: #00bcd4;
+    background: #00bcd42b;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders span.order-status.completed {
+    border-color: #4caf50;
+    background: #4caf502b;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders span.order-status.cancelled {
+    border-color: #ffb39b;
+    background: #ffb39b2b;
+}
+
+.bestgadgetsbd .bestgadgetsbd-orders .order-action > span {
+    font-size: 20px;
+    line-height: 28px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes searching {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.woocommerce_page_bestgadgetsbd *[disabled] {
+    pointer-events: none;
+}
+
+.bestgadgetsbd-notices {
+    padding: 10px 20px;
+}
+
+.bestgadgetsbd-notices .bestgadgetsbd-notice {
+    border: 1px solid #cbcbcb;
+    padding: 10px;
+    background: #f0f0f170;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.bestgadgetsbd-notices .bestgadgetsbd-notice-warning {
+    border-color: #f9c374;
+    background: #ffae373b;
+}
+
+a.plugin-meta-buy, a.plugin-meta-buy:active, a.plugin-meta-buy:focus, a.plugin-meta-buy:visited, a.bestgadgetsbd-support, a.bestgadgetsbd-support:focus, a.bestgadgetsbd-support:active, a.bestgadgetsbd-doc, a.bestgadgetsbd-doc:focus, a.bestgadgetsbd-doc:active {
+    background: #e61f63;
+    color: #fff;
+    padding: 3px 10px 5px;
+    border-radius: 50px;
+    font-size: 11px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+a.bestgadgetsbd-doc {
+    background: #292929;
+}
+
+/**
+ * Popup Style
+ */
+.bestgadgetsbd-popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    opacity: 1;
+    display: none;
+    z-index: 9999999;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box {
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 380px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-icon {
+    font-size: 100px;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-icon > span {
+    font-size: inherit;
+    width: inherit;
+    height: inherit;
+    animation-name: bestgadgetsbd_bell_animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: #e91e63;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-content {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 20px 0 30px;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-actions .popup-action {
+    border: 1px solid #dedede;
+    padding: 10px 18px;
+    border-radius: 3px;
+    background: #f1f1f1;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-actions .popup-action.popup-action-ack {
+    background: #009688;
+    border-color: #009688;
+    color: #fff;
+}
+
+.bestgadgetsbd-popup .bestgadgetsbd-popup-box .popup-actions .popup-action.popup-action-skip {
+    margin-right: 20px;
+}
+
+body.bestgadgetsbd-bubble-active #wpcontent:before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000059;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+body.bestgadgetsbd-bubble-active .bestgadgetsbd-action.bestgadgetsbd-controller {
+    z-index: 9999999;
+    background: #fff !important;
+}
+
+body.bestgadgetsbd-bubble-active .bestgadgetsbd-bubble-wrap .bestgadgetsbd-bubble {
+    position: absolute;
+    transform-origin: 0 100%;
+    text-align: center;
+    background-color: #ffc20a;
+    text-shadow: none;
+    color: #424242;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 180px;
+    padding: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    left: 35px;
+    top: -115px;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+    animation-name: expand-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+body:not(.bestgadgetsbd-bubble-active) .bestgadgetsbd-bubble-wrap .bestgadgetsbd-bubble {
+    display: none;
+}
+
+body.bestgadgetsbd-bubble-active .bestgadgetsbd-bubble-wrap .bestgadgetsbd-bubble:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #ffc20a transparent transparent #ffc20a;
+    transform: rotate(10deg);
+}
+
+@keyframes expand-bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes bestgadgetsbd_bell_animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-25deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
